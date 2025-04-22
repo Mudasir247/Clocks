@@ -34,7 +34,24 @@ document.addEventListener('DOMContentLoaded', function () {
 
     main();
 
-
+    const ana = () => {
+        let n1 = document.getElementById('n1');
+        let n2 = document.getElementById('n2');
+        let n3 = document.getElementById('n3');
+        let dat = new Date();
+        let hr = dat.getHours();
+        let mn = dat.getMinutes();
+        let sc = dat.getSeconds();
+        const hrangle = (hr % 12) * 30 + mn * 0.5;
+        const mnangle = mn * 6 + sc * 0.1;
+        const scangle = sc * 6;
+        n3.style.transform = `rotate(${hrangle}deg)`;
+        n2.style.transform = `rotate(${mnangle}deg)`;
+        n1.style.transform = `rotate(${scangle}deg)`;
+    }
+    setInterval(() => {
+        ana();
+    }, 1000);
 
 
 
