@@ -175,12 +175,13 @@ body {
     height: 2rem;
     background-color: rgb(0, 0, 0);
     align-items: center;
-    justify-content: space-evenly;  
+    justify-content: space-evenly;
     border-radius: 4px;
 }
-.rows p{
+
+.rows p {
     font-size: larger;
-    font-weight:800 ;
+    font-weight: 800;
     color: orange;
     width: 20%;
     background-color: brown;
@@ -189,6 +190,7 @@ body {
     align-items: center;
     border-radius: 2px;
 }
-.rows p:hover{
-    cursor:pointer;
+
+.rows p:hover {
+    cursor: pointer;
 }
