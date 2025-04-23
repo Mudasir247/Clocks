@@ -53,6 +53,25 @@ document.addEventListener('DOMContentLoaded', function () {
         ana();
     }, 1000);
 
+    document.querySelectorAll(".rows p").forEach(button =>{
+        button.addEventListener('click', function(){
+           let inp = document.getElementById("inp");
+           if(button.innerText === "="){
+            try{
+                inp.value = eval(inp.value) //it  makes every p accessible and we can now append them to show in our input:
+             } 
+             catch{
+                 inp.value= "error please clear me";
+                } 
+                }
+                else { 
+                inp.value += button.innerText;
+                //that is used to append values in our input channel:
+            }
+       
+        });
+    });
+    
 
 
-})
+});
